@@ -1,0 +1,59 @@
+[project]
+name = "CyberDefense"
+version = "0.1.0"
+description = "A menu-driven defensive security toolkit: port scanning, log parsing, incident response, and more."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Eapen Benny" }
+]
+keywords = [
+    "cybersecurity",
+    "security",
+    "network-scanner",
+    "incident-response",
+    "packet-sniffer",
+    "security-tools",
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+dependencies = [
+    "python-dotenv",
+    "requests",
+    "scapy",
+    "tabulate",
+]
+
+[project.urls]
+Homepage = "https://github.com/Kryptoveride/CyberDefense"
+Repository = "https://github.com/Kryptoveride/CyberDefense"
+Issues = "https://github.com/Kryptoveride/CyberDefense/issues"
+
+[project.scripts]
+cyberdefense = "cyberdefense.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cyberdefense"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/cyberdefense",
+    "README.md",
+    "LICENSE",
+]

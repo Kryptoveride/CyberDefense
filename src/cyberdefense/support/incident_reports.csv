@@ -1,0 +1,8 @@
+Incident_ID,Threat_Type,Target_Asset,Remediation_Action
+INC001,SQL_Injection,ECommerce_Web_App,Input Validation Patch Deployed
+INC002,Brute_Force,Corporate_VPN_Gateway,Source Attacker IP Blocked via Firewall
+INC003,Phishing,Employee_Mailbox,Malicious Email Quarantined and User Notified
+INC004,Ransomware,File_Server,Host Isolated and Restored from Backup
+INC005,Malware_Outbreak,Employee_Desktop,Endpoint Reimaged and Credentials Rotated
+INC006,DDoS_Attack,Public_Web_Server,Traffic Filtered via Upstream Provider
+INC-20260809204157,malware_outbreak,jason,Blocked 13.13.13.13 via firewall; host jason contained
